@@ -1,6 +1,6 @@
 version: "1"
 services:
-  music-player:
+  catgirl-discoverer:
     build:
       context: .
       dockerfile: Dockerfile

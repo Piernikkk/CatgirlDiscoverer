@@ -30,8 +30,6 @@ export default function Home() {
     const data = await res.json();
     console.log(data);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
     setImage(data.results[0])
   }
 
@@ -82,7 +80,7 @@ const loaderContainer = css({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '#00000030',
+  backgroundColor: '#00000050',
 })
 
 const description = css({
