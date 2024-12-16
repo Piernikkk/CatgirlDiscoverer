@@ -25,7 +25,7 @@ const container = css({
     justifyContent: 'space-between',
     alignItems: 'center',
     gap: '40px',
-    padding: '10px 30px',
+    padding: '30px 40px',
     position: 'relative',
 })
 
