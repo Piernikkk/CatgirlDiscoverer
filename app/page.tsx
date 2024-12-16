@@ -67,7 +67,7 @@ export default function Home() {
 const idk = css({
   display: 'flex',
   gap: '100px',
-  // height: '100%',
+  height: '100%',
 })
 
 const loaderContainer = css({
@@ -98,7 +98,7 @@ const container = css({
 
 const helper = css({
   position: 'relative',
-  // height: '100%',
+  height: '100%',
   minWidth: '100px',
 
 })
@@ -109,6 +109,7 @@ const items = css({
   paddingTop: '10px',
   flexDirection: 'column',
   width: '100%',
+  // flex: 1,
   height: '100%',
   justifyContent: 'center',
   alignItems: 'center',
@@ -121,12 +122,13 @@ const imageFrame = css({
   right: '0px',
   left: '0px',
   borderRadius: '30px',
+  // height: '100%',
   zIndex: 50,
 });
 const imageBackground = css({
-
   zIndex: 0,
-  filter: 'blur(100px) brightness(0.7)',
+  filter: 'blur(200px) brightness(0.7)',
   borderRadius: '30px',
-  maxHeight: '800px'
+  // maxHeight: '800px',
+  height: '85%',
 });

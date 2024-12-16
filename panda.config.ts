@@ -6,7 +6,8 @@ const globalCss = defineGlobalStyles({
     fontFamily: 'var(--font-poppins)',
     height: '100vh',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    boxSizing: 'border-box',
   }
 });
 
