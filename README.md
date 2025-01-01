@@ -1,4 +1,4 @@
-# [Catgirl Discoverer](catgirl.agin.rocks)
+# [Catgirl Discoverer](https://catgirl.agin.rocks)
 
 _This project is anything but serious_
 
