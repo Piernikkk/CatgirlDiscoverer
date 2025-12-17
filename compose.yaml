@@ -1,0 +1,20 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    networks:
+      - default
+      - proxy
+    labels:
+      traefik.enable: true
+      traefik.port: 3000
+      traefik.http.services.catgirl_discoverer.loadbalancer.server.port: "3000"
+      traefik.http.routers.catgirl_discoverer.rule: "Host(`catgirl.piernik.rocks`) || Host(`catgirl.agin.rocks`) || Host(`agin.rocks`) || Host(`piernik.rocks`) || Host(`catgirl.rvonau.dev`)|| Host(`www.ziernik.tech`) || Host(`www.tymek.ovh`)"
+
+networks:
+  default:
+  proxy:
+    name: proxy-network
+    external: true
